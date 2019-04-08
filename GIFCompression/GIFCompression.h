@@ -19,6 +19,14 @@ typedef NS_ENUM(NSUInteger, GIFCompressionResult) {
 
 @interface GIFCompression : NSObject
 
+/**
+ 压缩GIF图片
+
+ @param lossylevel 压缩率，范围0-200，压缩率越大，压缩完成文件更小
+ @param inputPath 传入图片路径，原始图片
+ @param outputPath 压缩后保存图片路径
+ @return 压缩结果，见GIFCompressionResult
+ */
 + (GIFCompressionResult)compressGIFWithLossyLevel:(int)lossylevel inputPath:(NSString *)inputPath outputPath:(NSString *)outputPath;
 
 @end

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292410E2223B9DCF003CF5B6 /* wwwww.gif in Resources */ = {isa = PBXBuildFile; fileRef = 292410E1223B9DCF003CF5B6 /* wwwww.gif */; };
+		292410E6223BA99D003CF5B6 /* d30b3f066d6d473429fa79988ab093fd.gif in Resources */ = {isa = PBXBuildFile; fileRef = 292410E5223BA99D003CF5B6 /* d30b3f066d6d473429fa79988ab093fd.gif */; };
+		292410E8223BA9A5003CF5B6 /* f17fa9be30d23ae607d14ac400927fff.gif in Resources */ = {isa = PBXBuildFile; fileRef = 292410E7223BA9A5003CF5B6 /* f17fa9be30d23ae607d14ac400927fff.gif */; };
+		292410EB223BC75C003CF5B6 /* NSData+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 292410E9223BC75B003CF5B6 /* NSData+Ex.m */; };
+		292410ED223BC9F3003CF5B6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292410EC223BC9F3003CF5B6 /* MobileCoreServices.framework */; };
+		2996B4692241F111007B7C83 /* 71b470db2234.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2996B4682241F110007B7C83 /* 71b470db2234.gif */; };
 		B82202211FE7E8930057DC2C /* GIFCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = B822021F1FE7E8930057DC2C /* GIFCompression.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B822028B1FE7EFE40057DC2C /* inttypes.h in Headers */ = {isa = PBXBuildFile; fileRef = B82202671FE7EFE40057DC2C /* inttypes.h */; };
 		B822028C1FE7EFE40057DC2C /* clp.h in Headers */ = {isa = PBXBuildFile; fileRef = B82202681FE7EFE40057DC2C /* clp.h */; };
@@ -64,6 +70,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		292410E1223B9DCF003CF5B6 /* wwwww.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wwwww.gif; sourceTree = "<group>"; };
+		292410E5223BA99D003CF5B6 /* d30b3f066d6d473429fa79988ab093fd.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = d30b3f066d6d473429fa79988ab093fd.gif; sourceTree = "<group>"; };
+		292410E7223BA9A5003CF5B6 /* f17fa9be30d23ae607d14ac400927fff.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = f17fa9be30d23ae607d14ac400927fff.gif; sourceTree = "<group>"; };
+		292410E9223BC75B003CF5B6 /* NSData+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Ex.m"; sourceTree = "<group>"; };
+		292410EA223BC75C003CF5B6 /* NSData+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Ex.h"; sourceTree = "<group>"; };
+		292410EC223BC9F3003CF5B6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2996B4682241F110007B7C83 /* 71b470db2234.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 71b470db2234.gif; sourceTree = "<group>"; };
 		B80A9EDA1FE8C528003D46CD /* opttemplate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = opttemplate.c; sourceTree = "<group>"; };
 		B822021C1FE7E8930057DC2C /* GIFCompression.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFCompression.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B822021F1FE7E8930057DC2C /* GIFCompression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFCompression.h; sourceTree = "<group>"; };
@@ -120,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292410ED223BC9F3003CF5B6 /* MobileCoreServices.framework in Frameworks */,
 				B871A10F1FE9650C002144A7 /* GIFCompression.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +218,7 @@
 		B82202A91FE7F0130057DC2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				292410EC223BC9F3003CF5B6 /* MobileCoreServices.framework */,
 				B82202B41FE7F0290057DC2C /* libstdc++.tbd */,
 				B82202B21FE7F0250057DC2C /* libstdc++.6.tbd */,
 				B82202B01FE7F0200057DC2C /* libstdc++.6.0.9.tbd */,
@@ -217,6 +232,8 @@
 		B871A0FA1FE964E7002144A7 /* GIFLossyCompressExample */ = {
 			isa = PBXGroup;
 			children = (
+				292410EA223BC75C003CF5B6 /* NSData+Ex.h */,
+				292410E9223BC75B003CF5B6 /* NSData+Ex.m */,
 				B871A0FB1FE964E7002144A7 /* AppDelegate.h */,
 				B871A0FC1FE964E7002144A7 /* AppDelegate.m */,
 				B871A0FE1FE964E7002144A7 /* ViewController.h */,
@@ -227,6 +244,10 @@
 				B871A1061FE964E7002144A7 /* LaunchScreen.storyboard */,
 				B871A1091FE964E7002144A7 /* Info.plist */,
 				B871A10A1FE964E7002144A7 /* main.m */,
+				292410E7223BA9A5003CF5B6 /* f17fa9be30d23ae607d14ac400927fff.gif */,
+				292410E5223BA99D003CF5B6 /* d30b3f066d6d473429fa79988ab093fd.gif */,
+				292410E1223B9DCF003CF5B6 /* wwwww.gif */,
+				2996B4682241F110007B7C83 /* 71b470db2234.gif */,
 			);
 			path = GIFLossyCompressExample;
 			sourceTree = "<group>";
@@ -340,7 +361,11 @@
 			files = (
 				B871A1161FE965D1002144A7 /* meme.gif in Resources */,
 				B871A1081FE964E7002144A7 /* LaunchScreen.storyboard in Resources */,
+				2996B4692241F111007B7C83 /* 71b470db2234.gif in Resources */,
+				292410E6223BA99D003CF5B6 /* d30b3f066d6d473429fa79988ab093fd.gif in Resources */,
+				292410E8223BA9A5003CF5B6 /* f17fa9be30d23ae607d14ac400927fff.gif in Resources */,
 				B871A1051FE964E7002144A7 /* Assets.xcassets in Resources */,
+				292410E2223B9DCF003CF5B6 /* wwwww.gif in Resources */,
 				B871A1031FE964E7002144A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B871A1001FE964E7002144A7 /* ViewController.m in Sources */,
+				292410EB223BC75C003CF5B6 /* NSData+Ex.m in Sources */,
 				B871A10B1FE964E7002144A7 /* main.m in Sources */,
 				B871A0FD1FE964E7002144A7 /* AppDelegate.m in Sources */,
 			);
@@ -527,7 +553,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7Z58D5ARBL;
+				DEVELOPMENT_TEAM = DW37L9ATXF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -552,7 +578,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7Z58D5ARBL;
+				DEVELOPMENT_TEAM = DW37L9ATXF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -573,11 +599,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Z58D5ARBL;
+				DEVELOPMENT_TEAM = LDN34PXC9A;
 				INFOPLIST_FILE = GIFLossyCompressExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lenovo.GIFLossyCompressExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sohu.GIFLossyCompressExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,11 +614,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Z58D5ARBL;
+				DEVELOPMENT_TEAM = LDN34PXC9A;
 				INFOPLIST_FILE = GIFLossyCompressExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lenovo.GIFLossyCompressExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sohu.GIFLossyCompressExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
