@@ -10,8 +10,9 @@
 		292410E2223B9DCF003CF5B6 /* wwwww.gif in Resources */ = {isa = PBXBuildFile; fileRef = 292410E1223B9DCF003CF5B6 /* wwwww.gif */; };
 		292410E6223BA99D003CF5B6 /* d30b3f066d6d473429fa79988ab093fd.gif in Resources */ = {isa = PBXBuildFile; fileRef = 292410E5223BA99D003CF5B6 /* d30b3f066d6d473429fa79988ab093fd.gif */; };
 		292410E8223BA9A5003CF5B6 /* f17fa9be30d23ae607d14ac400927fff.gif in Resources */ = {isa = PBXBuildFile; fileRef = 292410E7223BA9A5003CF5B6 /* f17fa9be30d23ae607d14ac400927fff.gif */; };
-		292410EB223BC75C003CF5B6 /* NSData+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 292410E9223BC75B003CF5B6 /* NSData+Ex.m */; };
 		292410ED223BC9F3003CF5B6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292410EC223BC9F3003CF5B6 /* MobileCoreServices.framework */; };
+		2996445F22758A6A00251F5D /* baby.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2996445E22758A6A00251F5D /* baby.gif */; };
+		2996446022758EAB00251F5D /* NSData+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 292410E9223BC75B003CF5B6 /* NSData+Ex.m */; };
 		2996B4692241F111007B7C83 /* 71b470db2234.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2996B4682241F110007B7C83 /* 71b470db2234.gif */; };
 		B82202211FE7E8930057DC2C /* GIFCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = B822021F1FE7E8930057DC2C /* GIFCompression.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B822028B1FE7EFE40057DC2C /* inttypes.h in Headers */ = {isa = PBXBuildFile; fileRef = B82202671FE7EFE40057DC2C /* inttypes.h */; };
@@ -76,6 +77,7 @@
 		292410E9223BC75B003CF5B6 /* NSData+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Ex.m"; sourceTree = "<group>"; };
 		292410EA223BC75C003CF5B6 /* NSData+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Ex.h"; sourceTree = "<group>"; };
 		292410EC223BC9F3003CF5B6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2996445E22758A6A00251F5D /* baby.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = baby.gif; path = "GIF测试图/baby.gif"; sourceTree = SOURCE_ROOT; };
 		2996B4682241F110007B7C83 /* 71b470db2234.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 71b470db2234.gif; sourceTree = "<group>"; };
 		B80A9EDA1FE8C528003D46CD /* opttemplate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = opttemplate.c; sourceTree = "<group>"; };
 		B822021C1FE7E8930057DC2C /* GIFCompression.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFCompression.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +168,8 @@
 				B82202411FE7EFC20057DC2C /* lib-gif-compression */,
 				B822021F1FE7E8930057DC2C /* GIFCompression.h */,
 				B871A0F31FE95AB0002144A7 /* GIFCompression.m */,
+				292410EA223BC75C003CF5B6 /* NSData+Ex.h */,
+				292410E9223BC75B003CF5B6 /* NSData+Ex.m */,
 				B82202201FE7E8930057DC2C /* Info.plist */,
 			);
 			path = GIFCompression;
@@ -232,8 +236,6 @@
 		B871A0FA1FE964E7002144A7 /* GIFLossyCompressExample */ = {
 			isa = PBXGroup;
 			children = (
-				292410EA223BC75C003CF5B6 /* NSData+Ex.h */,
-				292410E9223BC75B003CF5B6 /* NSData+Ex.m */,
 				B871A0FB1FE964E7002144A7 /* AppDelegate.h */,
 				B871A0FC1FE964E7002144A7 /* AppDelegate.m */,
 				B871A0FE1FE964E7002144A7 /* ViewController.h */,
@@ -244,6 +246,7 @@
 				B871A1061FE964E7002144A7 /* LaunchScreen.storyboard */,
 				B871A1091FE964E7002144A7 /* Info.plist */,
 				B871A10A1FE964E7002144A7 /* main.m */,
+				2996445E22758A6A00251F5D /* baby.gif */,
 				292410E7223BA9A5003CF5B6 /* f17fa9be30d23ae607d14ac400927fff.gif */,
 				292410E5223BA99D003CF5B6 /* d30b3f066d6d473429fa79988ab093fd.gif */,
 				292410E1223B9DCF003CF5B6 /* wwwww.gif */,
@@ -315,7 +318,7 @@
 		B82202131FE7E8930057DC2C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = lenovo;
 				TargetAttributes = {
 					B822021B1FE7E8930057DC2C = {
@@ -366,6 +369,7 @@
 				292410E8223BA9A5003CF5B6 /* f17fa9be30d23ae607d14ac400927fff.gif in Resources */,
 				B871A1051FE964E7002144A7 /* Assets.xcassets in Resources */,
 				292410E2223B9DCF003CF5B6 /* wwwww.gif in Resources */,
+				2996445F22758A6A00251F5D /* baby.gif in Resources */,
 				B871A1031FE964E7002144A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +388,7 @@
 				B871A0F21FE95478002144A7 /* gif_compress.c in Sources */,
 				B82202A71FE7EFE40057DC2C /* clp.c in Sources */,
 				B82202A81FE7EFE40057DC2C /* merge.c in Sources */,
+				2996446022758EAB00251F5D /* NSData+Ex.m in Sources */,
 				B82202A21FE7EFE40057DC2C /* gifwrite.c in Sources */,
 				B82202981FE7EFE40057DC2C /* support.c in Sources */,
 				B82202971FE7EFE40057DC2C /* gifread.c in Sources */,
@@ -399,7 +404,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B871A1001FE964E7002144A7 /* ViewController.m in Sources */,
-				292410EB223BC75C003CF5B6 /* NSData+Ex.m in Sources */,
 				B871A10B1FE964E7002144A7 /* main.m in Sources */,
 				B871A0FD1FE964E7002144A7 /* AppDelegate.m in Sources */,
 			);
@@ -449,6 +453,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -456,6 +461,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -507,6 +513,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -514,6 +521,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -563,6 +571,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lenovo.GIFCompression;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -587,6 +599,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lenovo.GIFCompression;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -603,6 +619,10 @@
 				INFOPLIST_FILE = GIFLossyCompressExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohu.GIFLossyCompressExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -618,6 +638,10 @@
 				INFOPLIST_FILE = GIFLossyCompressExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohu.GIFLossyCompressExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

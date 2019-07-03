@@ -216,7 +216,7 @@ static const char *output_option_types[] = {
 #define OPTIMIZE_TYPE           (Clp_ValFirstUser + 10)
 #define RESIZE_METHOD_TYPE      (Clp_ValFirstUser + 11)
 
-const Clp_Option options[] = {
+const Clp_Option clp_gif_options[] = {
 
   { "append", 0, APPEND_OPT, 0, 0 },
   { "app-extension", 'x', APP_EXTENSION_OPT, Clp_ValString, 0 },
@@ -1459,7 +1459,7 @@ a_main(int argc, char *argv[])
   //static_assert(sizeof(unsigned long) == SIZEOF_UNSIGNED_LONG, "unsigned long has the wrong size.");
   //static_assert(sizeof(void*) == SIZEOF_VOID_P, "void* has the wrong size.");
 
-  clp = Clp_NewParser(argc, (const char * const *)argv, sizeof(options) / sizeof(options[0]), options);
+  clp = Clp_NewParser(argc, (const char * const *)argv, sizeof(clp_gif_options) / sizeof(clp_gif_options[0]), clp_gif_options);
 
   Clp_AddStringListType
     (clp, LOOP_TYPE, Clp_AllowNumbers,

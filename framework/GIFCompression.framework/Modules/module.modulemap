@@ -1,0 +1,6 @@
+framework module GIFCompression {
+  umbrella header "GIFCompression.h"
+
+  export *
+  module * { export * }
+}

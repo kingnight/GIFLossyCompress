@@ -38,7 +38,7 @@ int gif_compress(int lossylevel, char* inpath, char* outpath) {
     
     char* cmd[6];
     cmd[0] = "gifsicle";
-    cmd[1] = "-O3";
+    cmd[1] = "-O1";
     cmd[2] = lossylevelchar;
     cmd[3] = "-o";
     cmd[4] = outpath;

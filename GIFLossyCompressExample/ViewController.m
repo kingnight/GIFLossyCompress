@@ -21,7 +21,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self compress];
+    NSArray *gifArr = @[@"baby",@"wwwww",@"f17fa9be30d23ae607d14ac400927fff",@"d30b3f066d6d473429fa79988ab093fd"];
+    
+    for (NSString *item in gifArr) {
+        [self compressWithName:item];
+    }
+    
+//    [self compressWithName:@"baby"];
+    
+//    [self compressWithName:@"wwwww"];
 //    [self useSysCompress];
 }
 
@@ -30,12 +38,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)compress{
+- (void)compressWithName:(NSString *)name{
     
-    NSDate* tmpStartData = [NSDate date];
-
+    //NSDate* tmpStartData = [NSDate date];
+    
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSString *input = [[NSBundle mainBundle] pathForResource:@"wwwww" ofType:@"gif"];
+        NSString *input = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
         
         NSString *dirtail = [NSString stringWithFormat:@"%@",@"/Documents/Images"];
         NSString *dirfull = [NSHomeDirectory() stringByAppendingPathComponent:dirtail];
@@ -43,29 +51,29 @@
             [[NSFileManager defaultManager] createDirectoryAtPath:dirfull withIntermediateDirectories:YES attributes:nil error:nil];
         }
         
-        NSString *outpath = [[dirfull stringByAppendingPathComponent:@"wwwww-2"] stringByAppendingPathExtension:@"gif"];
+        NSData *inputData = [NSData dataWithContentsOfFile:input];
         
-        NSLog(@"out path :%@",outpath);
+        NSString *outputName = [NSString stringWithFormat:@"out-%@",name];
+        NSString *outpath = [[dirfull stringByAppendingPathComponent:outputName] stringByAppendingPathExtension:@"gif"];
         
+        NSLog(@"start outPath:%@",outpath);
         
         //LossyLevel越大压缩率越大0-200
-        GIFCompressionResult re = [GIFCompression compressGIFWithLossyLevel:150 inputPath:input outputPath:outpath];
-        NSLog(@"end result : %d",(long)re);
+        [[GIFCompression shareInstance] compressGIFWithLossyLevel:150 inputData:inputData outputPath:outpath completion:^(GIFCompressionResult result, NSString *outputPath) {
+            if (result == GIFCompressOK) {
+                NSLog(@"GIFCompression OK:%@",outputPath);
+            }
+        }];
         
-        double deltaTime = [[NSDate date] timeIntervalSinceDate:tmpStartData];
-        NSLog(@"时间间隔 %f 秒", deltaTime);
-    });
+//        if (re == GIFCompressOK) {
+//            NSLog(@"end result : %ld",(long)re);
+//
+//            double deltaTime = [[NSDate date] timeIntervalSinceDate:tmpStartData];
+//            NSLog(@"时间间隔 %f 秒", deltaTime);
+//        }
 
+    });
     
-    
-    //分辨率500*281 ，80质量， 345KB ，  4.4秒
-    //500*261， 80质量 ，9.15秒，   834KB ——》 500KB
-    //60质量  10秒
-    //90  538
-    //压缩体积30%左右，画质肉眼看损失小  9.76秒
-    //100
-    
-    //wwww  ， 17.991541 秒
 }
 
 - (void)useSysCompress{
@@ -86,9 +94,9 @@
         
         NSData *inputData = [[NSData alloc] initWithContentsOfFile:input];
         
-        NSData *outputData = [NSData compressWithGifData:inputData scale:0.5];
+       // NSData *outputData = [NSData compressWithGifData:inputData scale:0.5];
         
-        [outputData writeToFile:outpath atomically:NO];
+        //[outputData writeToFile:outpath atomically:NO];
 //        //LossyLevel越大压缩率越大0-200
 //        GIFCompressionResult re = [GIFCompression compressGIFWithLossyLevel:190 inputPath:input outputPath:outpath];
 //        NSLog(@"end result : %d",(long)re);
