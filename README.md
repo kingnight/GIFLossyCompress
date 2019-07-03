@@ -62,8 +62,31 @@
 
 ### 示例
 
-```
+```objective-c
+dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSString *input = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
+        
+        NSString *dirtail = [NSString stringWithFormat:@"%@",@"/Documents/Images"];
+        NSString *dirfull = [NSHomeDirectory() stringByAppendingPathComponent:dirtail];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:dirfull]) {
+            [[NSFileManager defaultManager] createDirectoryAtPath:dirfull withIntermediateDirectories:YES attributes:nil error:nil];
+        }
+        
+        NSData *inputData = [NSData dataWithContentsOfFile:input];
+        
+        NSString *outputName = [NSString stringWithFormat:@"out-%@",name];
+        NSString *outpath = [[dirfull stringByAppendingPathComponent:outputName] stringByAppendingPathExtension:@"gif"];
+        
+        NSLog(@"start outPath:%@",outpath);
+        
+        //LossyLevel越大压缩率越大0-200
+        [[GIFCompression shareInstance] compressGIFWithLossyLevel:150 inputData:inputData outputPath:outpath completion:^(GIFCompressionResult result, NSString *outputPath) {
+            if (result == GIFCompressOK) {
+                NSLog(@"GIFCompression OK:%@",outputPath);
+            }
+        }];
 
+    });
 ```
 
 
